@@ -1,0 +1,15 @@
+<div id="customer">
+  <h2>customer.name</h2>
+  <%
+    unless customer.image.empty?
+    image_tag customer.image%>
+  <% unless customer.phone_number?%>
+  <p><strong>Phone: </strong>customer.phone_number</p>
+  <%end%>
+  <% unless customer.email_address?%>
+  <p><strong>Email: </strong>customer.email_address</p>
+  <%end%>
+  <% unless customer.notes?%>
+  <p><strong>Notes: </strong>customer.notes</p>
+  <%end%>
+</div>
