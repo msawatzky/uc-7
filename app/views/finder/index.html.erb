@@ -1,7 +1,8 @@
 <h1>All Customers</h1>
-<!-- Link to new customer and aphabitized -->
-<%= link_to 'Alphabetized', customers_alphabetized_path%>
-<%= link_to 'Missing Emails', customers_missing_email_path %>
+<p>
+  <%= link_to 'Alphabetized', customers_alphabetized_path%> -
+  <%= link_to 'Missing Emails', customers_missing_email_path %>
+</p>
 <div>
   <%= render @customers %>
 </div>
